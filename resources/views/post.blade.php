@@ -11,7 +11,8 @@
 <body>
 
     <article>
-        <?= $post; ?>
+
+        <?= $post->body; ?>
        
     </article>
 
