@@ -12,8 +12,9 @@
 
     <article>
 
-        <?= $post->body; ?>
-       
+        <h2><?= $post->title; ?></a></h2>
+        <p><?= $post->body; ?></p>
+
     </article>
 
     <a href="/lara-test/">Go Back</a>

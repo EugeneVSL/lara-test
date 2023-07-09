@@ -14,8 +14,8 @@
 
         <article>
 
-            <h2><a href="posts/<?= $post->slug ?>"><?= $post->title ?></a></h2>
-            <p><?= $post->body ?></p>
+            <h2><a href="posts/<?= $post->slug; ?>"><?php echo $post->title; ?></a></h2>
+            <h4><?php echo $post->excerpt; ?></h4>
 
         </article>
 
