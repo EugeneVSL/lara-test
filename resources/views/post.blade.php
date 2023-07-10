@@ -12,8 +12,8 @@
 
     <article>
 
-        <h2><?= $post->title; ?></a></h2>
-        <p><?= $post->body; ?></p>
+        <h2>{{ $post->title }}</a></h2>
+        {!! $post->body !!}
 
     </article>
 
