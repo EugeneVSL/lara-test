@@ -22,6 +22,14 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/postscopy', function () {
+
+    return view('postscopy', [
+        'posts' => Post::all()
+    ]);
+});
+
+
 Route::get('/posts/{post}', function ($slug) {
 
     return view('post', [
