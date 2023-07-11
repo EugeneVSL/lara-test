@@ -33,7 +33,7 @@ Route::get('/postscopy', function () {
 Route::get('/posts/{post}', function ($slug) {
 
     return view('post', [
-        'post' => Post::find($slug)
+        'post' => Post::findOrFail($slug)
     ]);
 
 })->where ('slug', '[A-z_\-]+');
