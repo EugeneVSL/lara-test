@@ -11,11 +11,11 @@ php_flag html_errors on
     # if your server did not have mod_rewrite enabled
 
     RewriteEngine On
-    RewriteBase /lara-test/
+    RewriteBase /lara-test
     # NOT needed unless you're using mod_alias to redirect
 
     RewriteCond %{REQUEST_URI} !/public
-    RewriteRule ^(.*)$ public/$1 [L]
+    RewriteRule ^(.*)$ /public/$1 [L]
     # Direct all requests to /public folder
    
 
